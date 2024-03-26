@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Signin.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>SIGNIN AND SIGNUP</title>
+</head>
+<body>
+
+    <div class="container">
+    <div class="form-box">
+    <h1 class="title">Sign Up</h1>
+    <div class="underline"></div>
+    <form action="#" method="#">
+
+                <div class="input-group">
+
+                    <div class="input-field namefield">
+
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" placeholder="Name">
+
+
+                    </div><!--end input-field-->
+
+                    <div class="input-field">
+
+                        <i class="fa-solid fa-at"></i>
+                        <input type="email" placeholder="email">
+
+
+                    </div><!--end input-field-->
+
+                    <div class="input-field">
+
+                        <i class="fa-solid fa-key"></i>
+                        <input type="password" placeholder="password">
+
+
+                    </div><!--end input-field-->
+                    <p><span class="text">Password Suggestions?</span> <a href="#"> Click Me</a></p>
+
+
+     </div><!--end input-group-->
+
+     <div class="btn-field">
+        <button type="#" class="signupbtn">Sign Up</button>
+        <button type="#" class="disable signinbtn">Sign In</button>
+     </div><!--end btn-field-->
+
+
+
+ </form><!--end form -->
+
+
+        </div><!--end form-box -->
+
+        
+        </div><!--end container -->
+
+                                 <!-- JavaScript For Login And SignUp Page Animation -->
+        
+        <script>
+
+let signUpBtn = document.querySelector('.signupbtn');
+let signInBtn = document.querySelector('.signinbtn');
+let nameField = document.querySelector('.namefield');
+let title = document.querySelector('.title');
+let underline = document.querySelector('.underline');
+let text = document.querySelector('.text');
+
+
+signInBtn.addEventListener('click',()=>{
+    nameField.style.maxHeight = '0';
+    title.innerHTML = 'Sign In';
+    text.innerHTML = 'Lost Password?';
+    signUpBtn.classList.add('disable');
+    signInBtn.classList.remove('disable');
+    underline.style.transform = 'translateX(36px)';
+});
+
+signUpBtn.addEventListener('click',()=>{
+    nameField.style.maxHeight = '61px';
+    title.innerHTML = 'Sign Up';
+    text.innerHTML = 'Password Suggestions?';
+    signUpBtn.classList.remove('disable');
+    signInBtn.classList.add('disable');
+    underline.style.transform = 'translateX(0px)';
+});
+
+
+
+
+
+
+
+
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        </script>
+    
+</body>
+</html>
